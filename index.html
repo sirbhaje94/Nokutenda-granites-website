@@ -1,49 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nokutenda Granites</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
     body {
       font-family: 'Roboto', sans-serif;
-      background: #f4f4f9;
+      margin: 0;
+      background: url('https://images.unsplash.com/photo-1580974928063-bf30a1b72349?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background-size: cover;
       color: #333;
       line-height: 1.6;
     }
     header {
-      background: linear-gradient(135deg, #2c3e50, #4ca1af);
-      color: #fff;
-      padding: 2rem;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
       text-align: center;
+      padding: 2rem;
     }
     nav {
-      background: #1f2c3d;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 1rem;
       text-align: center;
-      padding: 0.75rem 0;
     }
     nav a {
-      color: #fff;
+      color: white;
       margin: 0 1rem;
       text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s;
+      font-weight: bold;
     }
     nav a:hover {
       color: #f39c12;
     }
     section {
-      max-width: 1000px;
+      background: rgba(255, 255, 255, 0.95);
       margin: 2rem auto;
       padding: 1.5rem;
-      background: #fff;
       border-radius: 12px;
+      max-width: 1000px;
       box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
     h2 {
@@ -51,50 +47,56 @@
       color: #2c3e50;
     }
     ul {
-      list-style: none;
-      padding-left: 0;
+      padding-left: 1rem;
     }
     ul li {
       margin-bottom: 1rem;
-      padding-left: 1.5rem;
-      position: relative;
     }
-    ul li::before {
-      content: '✔';
-      position: absolute;
-      left: 0;
-      color: #27ae60;
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
     }
-    footer {
-      text-align: center;
-      background: #2c3e50;
-      color: #fff;
-      padding: 1rem;
-      margin-top: 2rem;
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
-    .contact p {
-      margin-bottom: 0.5rem;
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 8px;
     }
     .whatsapp-float {
       position: fixed;
-      width: 60px;
-      height: 60px;
       bottom: 20px;
       right: 20px;
-      background-color: #25d366;
-      color: #fff;
-      border-radius: 50px;
+      background: #25d366;
+      color: white;
+      width: 60px;
+      height: 60px;
       text-align: center;
       font-size: 30px;
-      box-shadow: 2px 2px 3px #999;
-      z-index: 100;
+      line-height: 60px;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      z-index: 1000;
     }
-    .whatsapp-float i {
-      margin-top: 16px;
+    footer {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Nokutenda Granites</h1>
     <p>Timeless Stonework. Lasting Impressions.</p>
@@ -104,43 +106,55 @@
     <a href="#about">About</a>
     <a href="#products">Products</a>
     <a href="#gallery">Gallery</a>
+    <a href="#map">Location</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <section id="about">
     <h2>About Us</h2>
-    <p>At <strong>Nokutenda Granites</strong>, we craft high-quality granite products for memorials, homes, and businesses. Our mission is to deliver timeless beauty through expert craftsmanship and top-grade materials.</p>
+    <p>We craft high-quality granite tombstones, kitchen tops, window seals, and wall cladding for both home and commercial use. Our skilled team ensures lasting durability and elegant finishes.</p>
   </section>
 
   <section id="products">
     <h2>Our Products</h2>
     <ul>
-      <li><strong>Granite Tombstones:</strong> Durable and custom-designed with elegant finishes.</li>
-      <li><strong>Kitchen Tops:</strong> Stylish granite countertops resistant to stains and heat.</li>
-      <li><strong>Window Seals:</strong> Seamless and polished granite framing for windows.</li>
-      <li><strong>Wall Cladding:</strong> Natural granite textures for indoor and outdoor appeal.</li>
-      <li><strong>Extras:</strong> Fireplaces, staircases, tabletops, engraving, and more.</li>
+      <li>Granite Tombstones</li>
+      <li>Kitchen Tops</li>
+      <li>Window Seals</li>
+      <li>Wall Cladding</li>
+      <li>Fireplaces, Staircases, and More</li>
     </ul>
   </section>
 
   <section id="gallery">
-    <h2>Gallery</h2>
-    <p>Our photo showcase is coming soon. Stay tuned for real work samples.</p>
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+      <img src="gallery1.jpg" alt="Tombstone 1">
+      <img src="gallery2.jpg" alt="Tombstone 2">
+      <img src="gallery3.jpg" alt="Tombstone 3">
+    </div>
   </section>
 
-  <section id="contact" class="contact">
+  <section id="map">
+    <h2>Our Location</h2>
+    <iframe
+      src="https://www.google.com/maps?q=Cnr+Golden+Quarry+and+Bulawayo+Road,+Bulawayo,+Zimbabwe&output=embed"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <section id="contact">
     <h2>Contact Us</h2>
     <p><strong>Address:</strong> Cnr Golden Quarry and Bulawayo Road, Opposite the Museum</p>
     <p><strong>Phone/WhatsApp:</strong> 071 850 6422</p>
-    <p><strong>Business Hours:</strong> Monday – Saturday: 8AM to 5PM</p>
+    <p><strong>Hours:</strong> Mon – Sat: 8:00AM to 5:00PM</p>
   </section>
+
+  <a class="whatsapp-float" href="https://wa.me/263718506422" target="_blank">💬</a>
 
   <footer>
     <p>&copy; 2025 Nokutenda Granites. All rights reserved.</p>
   </footer>
 
-  <a href="https://wa.me/263718506422" class="whatsapp-float" target="_blank">
-    <i>💬</i>
-  </a>
 </body>
 </html>
